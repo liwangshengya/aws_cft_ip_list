@@ -1,6 +1,8 @@
-优选aws的免费CDN(cloudfront，以下简称CFT)的ip
+## 文件说明
 
-`aws_not_cn_ip.txt` 是运行该Python程序得到的不包含中国的IP列表。
+get_gcore_ip.py  获取[gcore]()([Global Next-Gen CDN. Get Started For Free - Gcore](https://gcore.com/cdn)) 的CDN的ip列表.（对于Gcore如果没有测速地址，直接加-dd参数禁用册数即可）。
+
+get_awscft_ip.py 获取CloudFront的CND的ip列表。 `aws_cft_ip.txt` 是运行该Python程序得到的不包含中国的IP列表。
 
 ### 建立CFT的测速地址
 
@@ -25,7 +27,7 @@ https://*.cloudfront.net/100mb.test
 我们下载[测速工具](https://github.com/XIU2/CloudflareSpeedTest/releases/tag/v2.2.2),根据自己的系统下载合适的版本，下载后解压，将我们生成的 `aws_not_cn_ip.txt`复制到该文件夹内，然后我们在该目录下打开终端，输入
 
 ```
-.\CloudflareST.exe -f .\awscft_ip_not_cn.txt -url https://*.cloudfront.net/100mb.test 
+.\CloudflareST.exe -f .\aws_cft_ip_not_cn.txt -url https://*.cloudfront.net/100mb.test 
 ```
 
 其中-url后的测速地址根据CFT分配的二级域名进行替换。各个参数含义参考原项目[README文件](https://github.com/XIU2/CloudflareSpeedTest#-%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8).
