@@ -4,6 +4,8 @@ get_gcore_ip.py  获取[gcore]()([Global Next-Gen CDN. Get Started For Free - Gc
 
 get_awscft_ip.py 获取CloudFront的CND的ip列表。 `aws_cft_ip.txt` 是运行该Python程序得到的不包含中国的IP列表。
 
+get_awscft_ip_byapi.py 功能和上边的一样，但是判断使用了ipinfo的api来判断ip区域，每天有请求限制，单个IP达到限制额度。
+
 ### 建立CFT的测速地址
 
 进入CFT首页，点击右上角创建分配。接下来在"源域"输入"[cachefly.cachefly.net](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbW5QZ0w0aDZMUGF0eHRnQU5jX2tHd0Ztc3RCZ3xBQ3Jtc0ttdmU5OWd1Zk9IbzBwMFBaV0hDRUh6X2wxS3lTcUt4c1FDWWRpV1Z3SWxTRm1GNXFiODJ1T2ZDamVxYTBHOEpwX2NYS25yR1Y0MnpMUVNhN2pFNkZrQURSMUxCRDE5eThHS1lNc3BsSTd6UGRobmxGZw&q=https%3A%2F%2Fcachefly.cachefly.net%2F100mb.test&v=MHFYRRo1Q8E)",”协议“选择匹配查看器”，
